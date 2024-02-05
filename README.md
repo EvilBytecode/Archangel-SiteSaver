@@ -6,6 +6,7 @@ This Python code allows you to save the content (HTML, JS, and CSS) of a website
 - Before importing, download this repository lol.
 - btw these variables can be modified so like website_url just to wburi etc.
 1. ex. code.:
+   - this saves your specified options you can either choose if you want only the sites css or js or html! it all depenfs out you
 
     ```python
     from utils.savesitecontent import save_content
@@ -21,11 +22,13 @@ This Python code allows you to save the content (HTML, JS, and CSS) of a website
     save_content(website_url, output_folder, user_agent, save_html, save_js, save_css)
     ```
 
-## Options
+2. ex. code:
+ - this saves the entire site without images, merges all css content and js into one html file.
+```python
+from utils.special import copysite
 
-- `website_url`: The URL of the website you want to save.
-- `output_folder`: The folder where the website content will be saved.
-- `user_agent`:    This is requiered most of the time cuz sites wont let you even in without it lol.
-- `save_html_option`: Set to `True` if you want to save the HTML content.
-- `save_js_option`: Set to `True` if you want to save the JS files.
-- `save_css_option`: Set to `True` if you want to save the CSS files.
+gay = 'https://celex.gg/'
+put = 'celex'
+UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0'
+copysite(gay, put, UA)
+```
