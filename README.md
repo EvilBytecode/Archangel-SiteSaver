@@ -10,7 +10,7 @@ This Python code allows you to save the content (HTML, JS, and CSS) of a website
 
     ```python
     from utils.savesitecontent import save_content
-
+# PLEASE DONT USE UNTIL FURTHER RELEASE, ITS PRETTY BUGGY NOW. LIKE REALLY BUGGY KEEP USING EXAMPLE 2
     website_url = 'https://example.com'
     output_folder = 'foldername'
     user_agent = 'Your User Agent'
